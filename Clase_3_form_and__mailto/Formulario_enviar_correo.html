@@ -1,0 +1,33 @@
+<html>
+    <body>
+        <header>
+            <h1>Escriba el correo con el mensaje que desea enviar</h1>
+        </header>
+        <form action="mailto:neni@hotmail.com">
+           
+        <div>
+            <!-- Cuando ponemos ese for en el label le vamos a insertar un valor para que haga referencia al id de cualquiera de los iput
+            que tenemos y de esa manera esten enlazados unos con otros. EL ID DE UN TAG DEBE SER UNICO -->
+            <label for="Subject">Asunto</label>
+            <!-- La propiedad name la utilizamos para cuanod vayamos a mapear la pagina y la id la utilizamos para identificar el tag
+            dentro del lenguaje -->
+            <input
+            type="text"
+            name="Subject"  sdf
+            id="Subject"
+            >
+
+        </div>
+        <div>
+            <label for="Body">Contenido</label>
+            <textarea 
+            name="body" 
+            id="body" 
+            rows="10"></textarea>
+        </div>
+
+            <input type="submit" value="Enviar mensaje">
+        </form>
+
+    </body>
+</html>
