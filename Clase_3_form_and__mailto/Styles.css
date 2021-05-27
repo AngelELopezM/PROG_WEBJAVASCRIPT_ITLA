@@ -1,0 +1,9 @@
+.belleza
+{
+    text-align: center;
+    background-color: gray;/*Este es para el background*/
+    color: honeydew;/*Este color es solo para las letras*/
+    border: 2px solid yellowgreen;
+    margin: 200px;
+}
+
