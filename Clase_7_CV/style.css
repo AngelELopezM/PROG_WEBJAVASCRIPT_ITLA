@@ -1,0 +1,114 @@
+/* importar fuentes desde google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+/* Asi se declaran las variables en caso de que tengamos algo que vayamos a utilizar varias veces tales como algunas fuentes o 
+colores */
+:root
+{
+    --color-fuente-principal : #FCE8D5;
+    --color-fuente-secundario:  #484E5E;
+}
+html
+{
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+
+/***************CONFIGURACION FLEX BOX*********************/
+.flex
+{
+    justify-content: center;
+    display: flex;
+    width: 60vw;
+    margin-left: auto;
+    margin-right: auto;
+    
+    
+}
+.flex-columna
+{
+    flex-direction: column;
+    align-items: center;
+    background-color: seashell;
+    text-align: left;
+}
+
+/*********************************************************/
+hr
+{
+    
+    width: 100%;
+    height: 2px;
+    background-color: var(--color-fuente-principal);
+    border-style: solid;
+}
+.area-personal
+{
+    /* width: 20%; */
+    width: 35%;
+    background-color:var(--color-fuente-secundario);
+    color: var(--color-fuente-principal);
+    padding: 1rem 3.5rem;
+    
+    
+}
+.area-profesional
+{
+    /* width: 30%; */
+    width: 75%;
+    /* rem es una unidad de medida relativa que se adapta a partir del font-size que se espesifica en el HTML */
+    padding-top: 1rem;
+    padding-left: 2.5rem;
+    padding-bottom: 3.5rem;
+    padding-right: 3.5rem;
+    color: var(--color-fuente-secundario);
+    
+}
+
+.estilo-list
+{
+    /* aqui lo que hago es que le quito el estilo a la lista, es decir que ahora la lista aparecesrá sin identificador */
+    list-style: none;
+}
+.foto
+{
+    width: 218px;
+    height: auto;
+    border-radius: 80%;
+}
+
+article > h3
+{
+    background-color:rgb(255, 228, 169) ;
+    margin-inline-start: 1px;
+    padding-left: 1rem;
+}
+section > h1
+{
+    font-size: 30px;
+}
+p
+{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+ul,li
+{
+    
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.area-personal > ul
+{
+    min-width: 100%;
+}
+.area-personal > h4
+{
+    min-width: 100%;
+}
+
+/* Esto en vez de ser una clase es un ID, los ID son unicos */
+#nombre
+{
+    text-align: center;
+}
