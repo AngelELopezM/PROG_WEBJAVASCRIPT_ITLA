@@ -9,9 +9,14 @@ colores */
 }
 html
 {
-    font-size: 16px;
+    font-size: 15px;
     font-family: 'Montserrat', sans-serif;
     
+}
+*
+{
+    margin: 0;
+    padding: 0;
 }
 
 /***************CONFIGURACION FLEX BOX*********************/
@@ -70,15 +75,29 @@ hr
     /* aqui lo que hago es que le quito el estilo a la lista, es decir que ahora la lista aparecesrá sin identificador */
     list-style: none;
 }
+
+/* Aqui lo que hice fue poner la imagen dentro de un div que va a servir como el marco y despues de eso configure la imagen 
+para que tome el tamaño del div y despues la ajusto para que se centre con el cover */
+.contenedor-imagen
+{
+    width: 15rem;
+    height: 15rem;
+    margin-bottom: .8rem;
+}
 .foto
 {
-    width: 218px;
-    height: auto;
-    border-radius: 80%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-position: top;
+    border-radius: 50%;
+    border: .2rem solid black;
 }
 
 article > h3
 {
+    border-bottom-right-radius: 2rem;
+    border-top-left-radius: 2rem;
     background-color:rgb(255, 228, 169) ;
     margin-inline-start: 1px;
     padding-left: 1rem;
@@ -87,28 +106,52 @@ section > h1
 {
     font-size: 30px;
 }
-p
-{
-    margin-top: 0px;
-    margin-bottom: 0px;
-}
+
 ul,li
 {
     
     margin-top: 0px;
     margin-bottom: 0px;
+    
 }
-.area-personal > ul
+
+.subtitulos
+{
+    font-size: 13px;
+    min-width: 100%;
+    margin-top: .8rem;
+}
+.fechas
+{
+    margin-bottom: .8rem;
+    font-size: 12px;
+}
+.titulos
 {
     min-width: 100%;
+    margin-top: .8rem;
+    margin-bottom: .8rem;
 }
-.area-personal > h4
-{
-    min-width: 100%;
-}
+
 
 /* Esto en vez de ser una clase es un ID, los ID son unicos */
 #nombre
 {
     text-align: center;
+        
+}
+#linkwhatsapp
+{
+    text-decoration: none;
+    color:aqua ;
+}
+#email
+{
+    text-decoration: none;
+    color:aqua ;
+}
+#profesion
+{
+    margin-top: .8rem;
+    margin-bottom: .8rem;
 }

@@ -1,0 +1,61 @@
+*
+{
+    margin: 0px;
+    padding: 0px;
+}
+html
+{
+    font-size: 16px;
+    background-color: whitesmoke;
+}
+/*******FLEX*********/
+.contenedor-principal{
+    display: flex;
+    width: 75vw;
+    height: 75vh;
+    margin: auto;
+    margin-top: 5rem;
+    justify-content: center;
+    
+}
+
+.contenedor-formulario
+{
+    display: flex;
+    flex-direction: column;
+    
+    width: 30%;
+    background-color: rgb(143, 134, 204);
+    box-shadow: 10px 10px 30px black;
+}
+.contenedor-derecho
+{
+    display: flex;
+    width: 35%;
+    margin-left: 5rem;
+    background-color: rgb(255, 147, 147);
+    box-shadow: 10px 10px 30px black;
+}
+
+/******************/
+
+.caja
+{
+ padding: .8rem;   
+ margin: .3rem 1rem;
+ border-radius: 10px;
+ border-style: ridge;
+}
+#caja-arriba-mensaje
+{
+    margin-top: 3rem;
+}
+
+.boton
+{
+    padding: 1rem;
+    margin: 2rem 1rem;
+
+    
+    
+}

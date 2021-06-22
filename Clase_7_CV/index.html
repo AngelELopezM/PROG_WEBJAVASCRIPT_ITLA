@@ -6,20 +6,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <!-- Este es el script para que el font awesome pueda funcionar de manera correcta -->
+    <script src="https://kit.fontawesome.com/65c476fb61.js" crossorigin="anonymous"></script>
     <title>CV Angel Lopez</title>
 </head>
 
 <body>
     <main class="flex">
         <section class="area-personal flex flex-columna">
-            <img src="imagen.jpeg" alt="foto curriculum" class="size-imagen foto">
+            <div class="contenedor-imagen">
+                <img src="imagen.jpeg" alt="foto curriculum" class="foto">
+            </div>
+
             <h1 id="nombre">Angel Lopez Mancebo</h1>
-            <p>Estudiante de programacion</p>
+            <p id="profesion">Estudiante de programacion</p>
 
             <hr>
 
 
-            <h4>Perfil personal</h4>
+            <h4 class="titulos">Perfil personal</h4>
             <p>
                 Estudiante de programacion de la universidad UTESA que busca una empresa donde pueda aplicar sus
                 conocimientos en el
@@ -29,21 +34,22 @@
 
 
 
-            <h4>Aptitudes y habilidades</h4>
+            <h4 class="titulos">Aptitudes y habilidades</h4>
             <ul>
 
                 <li>Persona motivada y disciplinada</li>
                 <li>Proactivo</li>
-                <li>Habla infles y español</li>
-                <li>Tienes conocimientos basicos de la programacion</li>
+                <li>Habla ingles y español</li>
+                <li>Manejo de C#</li>
+                <li>Manejo de SQL server</li>
             </ul>
 
-
+                <!-- Contactos -->
             <div>
-                <h4>Informacion de contacto</h4>
+                <h4 class="titulos">Informacion de contacto</h4>
 
-                <p>Telefono: 829-690-0855</p>
-                <p>Correo Electronico: enmanuelm15@hotmail.com</p>
+                <p>Telefono: <a target= "_blank"href="https://wa.link/jcuanm" id="linkwhatsapp"> 829-690-0855 </a><i class="fab fa-whatsapp"></i></p>
+                <p>Correo Electronico:<a id="email" href="mailto:enmanuelm15@hotmail.com"> enmanuelm15@hotmail.com</a></p>
 
             </div>
 
@@ -51,44 +57,54 @@
 
 
         </section>
+        <!-- Aqui empieza el area de la parte derecha -->
         <section class="area-profesional flex flex-columna">
             <article>
-                <h3>Historial laboral</h3>
+                <!-- HISTORIAL LABORAL -->
+                <h3 class="titulos">Historial laboral</h3>
 
-                <h5>Agente Comercial</h5>
-                <p>Portal Juegos Línea (2017 - Presente)</p>
-                <ul>
-                    <li>Gestión personal de consultas de clientes de nivel 3</li>
-                    <li>Gestión de operaciones internas para la mejora de la calidad de servicio</li>
-                    <li>Realización de auditoría interna de existencias en trastienda</li>
-                </ul>
-                <h5>Agente Comercial</h5>
-                <p>Portal Juegos Línea (2017 - Presente)</p>
-                <ul>
-                    <li>Gestión personal de consultas de clientes de nivel 3</li>
-                    <li>Gestión de operaciones internas para la mejora de la calidad de servicio</li>
-                    <li>Realización de auditoría interna de existencias en trastienda</li>
-                </ul>
+                <h5 class="subtitulos">Representante soporte tecnico(Ingles), Conduent</h5>
+                <p class="fechas">septiembre 2018- mayo 2019</p>
+                <p>
+                    Representante soporte técnico experto via telefonica en servicios celulares, encargado
+                    de resolver problemas con datos móviles y servicios relacionados a la telefónica, también
+                    encargado de resolver problemas con distintos dispositivos telefónicos android y IOS
+                </p>
+                <h5 class="subtitulos">Representante de ventas(Ingles), ERC</h5>
+                <p class="fechas">marzo 2020 - Presente</p>
+                <p>
+                    Representante de ventas(OUTBOUND e INBOUND), encargado de asistir a los clientes
+                    re-agendando citas para la instalacion de cable, internet y/o telefono; tambien vender los
+                    productos y beneficios que ofrece OPTIMUM/SUDDENLINK
+                </p>
 
 
+                <!-- HISTOIAL ACADEMICO -->
+                <h3 class="titulos">Historial academico</h3>
 
-                <h3>Historial academico</h3>
+                <h5 class="subtitulos">Colegio Nuestra Señora del Perpetuo Socorro, Bachiller tecnico
+                    profesional en informatica</h5>
+                <p class="fechas">2015</p>
 
-                <h5>Agente Comercial</h5>
-                <p>Portal Juegos Línea (2017 - Presente)</p>
-                <ul>
-                    <li>Gestión personal de consultas de clientes de nivel 3</li>
-                    <li>Gestión de operaciones internas para la mejora de la calidad de servicio</li>
-                    <li>Realización de auditoría interna de existencias en trastienda</li>
-                </ul>
-                <h5>Agente Comercial</h5>
-                <p>Portal Juegos Línea (2017 - Presente)</p>
-                <ul>
-                    <li>Gestión personal de consultas de clientes de nivel 3</li>
-                    <li>Gestión de operaciones internas para la mejora de la calidad de servicio</li>
-                    <li>Realización de auditoría interna de existencias en trastienda</li>
-                </ul>
-                <h3>Intereses y aficiones</h3>
+                <h5 class="subtitulos">UNAPEC IDIOMAS, Ingles</h5>
+                <p class="fechas">2014 - 2017</p>
+
+                <h5 class="subtitulos">Universidad Tecnologia de Santiago(UTESA), Ingenieria en sistemas
+                    computacionales</h5>
+                <p class="fechas">2015 - Presente</p>
+
+                <h5 class="subtitulos">Manejo de paquete de oficina e internet, INFOTEP</h5>
+                <p class="fechas">2016</p>
+
+                <h5 class="subtitulos">C#.NET basico, ITLA </h5>
+                <p class="fechas">ene 2020 — may 2020</p>
+
+                <h5 class="subtitulos">Diplomado en programacion SQL server, ITLA</h5>
+                <p class="fechas">may 2020 — sep 2020</p>
+                
+
+                <!-- INTERESES -->
+                <h3 class="titulos">Intereses y aficiones</h3>
                 <p>Tengo interés por el estudio de diferentes idiomas. En la actualidad estoy aprendiendo por mi cuenta
                     mandarín oral. También disfruto con la lectura y el dibujo.</p>
             </article>
